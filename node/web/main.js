@@ -23,5 +23,5 @@ function saveName() {
 
   localStorage.setItem("users", name_list);
 
-  content.value = '';
+  content.value = 'name-box';
 }

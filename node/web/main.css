@@ -1,9 +1,10 @@
 body {
   /* background-color: #ccc; */
+  background-color: white;
 }
 
 h1 {
-  color: red;
+  color: blue;
 }
 
 .name-header {
@@ -29,10 +30,10 @@ h1 {
 }
 
 .btn-main {
-  background: blueviolet;
+  background: blue;
   color: white;
   border-radius: 5px;
-  border: 1px solid purple;
+  border: 1px solid blue;
 }
 
 .btn-main:hover {
@@ -40,6 +41,8 @@ h1 {
 }
 
 #input-box {
+  background-color: white;
+  border-radius: 5px ;
 }
 
 #name-list {
