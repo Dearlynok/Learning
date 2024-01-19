@@ -20,7 +20,7 @@ function printName() {
 printName();
 
 function ChangeName(newName) {
-  name = newName;
+ let name = newName;
   console.log(name);
 };
 
@@ -30,19 +30,7 @@ function birthday() {
   printName();
 }
 
-function saveUserName() {
-  let val = document.getElementById("nameInput");
 
-  name = val.value;
-
-  fetch("http://127.0.0.1:3000/username", {
-    method: "POST",
-    body: name,
-    headers: {
-      "Content-type": "text/plain; charset=UTF-8"
-    }
-  })
-}
 
 
 

@@ -1,5 +1,9 @@
 var name_list = [];
 
+function alert(message) {
+  console.log(message);
+}
+
 function buildList() {
   var list = document.getElementById('name-list');
 
@@ -24,4 +28,53 @@ function saveName() {
   localStorage.setItem("users", name_list);
 
   content.value = 'name-box';
+}
+
+function removeName(inputBox) {
+
+  inputBox.value = '';
+
+
+}
+
+function saveUserName() {
+  let inputBox = document.getElementById("nameInput");
+
+
+
+  let naam = inputBox.value;
+
+
+  if (naam == "") {
+    alert("voeg een naam toe");
+  } else {
+    fetch("http://localhost:3000/username", {
+      method: "POST",
+      body: naam,
+      headers: {
+        "Content-type": "text/plain; charset=UTF-8"
+
+      }
+    });
+
+    removeName(inputBox)
+
+    alert("klaar");
+  }
+}
+
+
+function myFunction() {
+  let popup = document.getElementById("popUp");
+  
+
+  let saveButtonClicked = true;
+
+
+  if (saveButtonClicked > true) {
+    console.log('Opgeslagen!');
+  } else {
+    console.log('');
+  }
+
 }
