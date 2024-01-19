@@ -1,6 +1,6 @@
 # Dearly Todo
 
-* Maak een notificatie aan na opslaan van een gebruiker (in het rood).
+* Maak een notificatie aan die na opslaan van een gebruiker zichtbaar kan worden gemaakt.
   * Maak een div aan met de notificatie
   * Geef de div een id
   * Creer een functie voor het zichtbaar/onzichtbaar maken van de notificatie
