@@ -18,7 +18,11 @@ async function removeUser() {
   fetch("http://localhost:3000/username", {
     method: "DELETE"
   })
+
+
+  showHideNotification("Verwijderd!")
 }
+
 
 getUsers();
 

@@ -59,22 +59,22 @@ function saveUserName() {
 
     removeName(inputBox)
 
-    alert("klaar");
+    showHideNotification("Opgeslagen!");
   }
 }
 
 
-function myFunction() {
-  let popup = document.getElementById("popUp");
+function showHideNotification(text) {
   
+    let popup = document.getElementById("popUp");
 
-  let saveButtonClicked = true;
+    popup.innerHTML = text;
 
-
-  if (saveButtonClicked > true) {
-    console.log('Opgeslagen!');
-  } else {
-    console.log('');
+    if (popup.style.display === "none") {
+      popup.style.display = "block";
+    } else {
+      popup.style.display = "none";
+    }
   }
 
-}
+
